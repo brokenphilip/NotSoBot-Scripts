@@ -75,6 +75,11 @@ Gets the dates and times for the next `count` Full Moon holidays in Team Fortres
 
 Gets the dates and times for the next `count` cycles/resets of (star) quests in Plants vs Zombies: Garden Warfare 2. If `count` is not entered, only one result is returned.
 
+### Progress Bar v1.0
+**Usage:** `.t run progressbar`
+
+Shows the current year progress bar percentage.
+
 ### PvZ: GW22 Next Town Hall Event v1.0
 **Usage:** `.t run th [count]`
 
