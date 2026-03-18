@@ -1,0 +1,22 @@
+.t edit run {note:NotSoBot Python Script Runner v1.0}
+{py3:
+
+nsb_user = "{user}"
+nsb_mention = "{mention}"
+nsb_discrim = "{discrim}"
+nsb_id = "{id}"
+nsb_nick = "{nick}"
+nsb_server = "{server}"
+nsb_servercount = "{servercount}"
+nsb_serverid = "{serverid}"
+nsb_channel = "{channel}"
+nsb_channelid = "{channelid}"
+nsb_args = "{args}"
+nsb_argslen = "{argslen}"
+nsb_avatar = "{avatar}"
+nsb_randuser = "{randuser}"
+nsb_randonline = "{randonline}"
+nsb_randchannel = "{randchannel}"
+nsb_prefix = "{prefix}"
+
+{text:https://raw.githubusercontent.com/brokenphilip/NotSoBot-Scripts/refs/heads/main/{arg:0}.py}}
