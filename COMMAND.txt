@@ -1,4 +1,4 @@
-.t edit run {note:NotSoBot Python Script Runner v1.0}
+@NotSoBot#9555 tag edit run {note:NotSoBot Python Script Runner v1.0}
 {py3:
 
 nsb_user = "{user}"
