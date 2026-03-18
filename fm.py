@@ -1,0 +1,22 @@
+# TF2 Next Full Moon v1.0
+import time
+
+base = 1734217200
+increment = 2551392
+pm = 86400
+
+rn = time.time()
+
+base += pm
+while base < rn:
+    base += increment
+
+times = 1
+if arg.isnumeric():
+    arg = int(arg)
+    if arg > 0:
+        times = arg
+
+for k in range(0, times):
+    print("{}. <t:{}> - <t:{}>".format(k, base - pm - pm, base))
+    base += increment
