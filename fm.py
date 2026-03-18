@@ -13,7 +13,7 @@ while base < rn:
 
 argslen = int(nsb_argslen)
 arg = 1
-if (argslen > 1)
+if (argslen > 1):
     arg = nsb_args.split()[1]
     
 times = 1
