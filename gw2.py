@@ -1,5 +1,4 @@
-# PvZ: GW22 Next Daily Script v1.0
-# Requires 'arg' ({arg:0})
+# PvZ: GW22 Next Quest Reset v1.0
 import time
 
 base = 1773777600
