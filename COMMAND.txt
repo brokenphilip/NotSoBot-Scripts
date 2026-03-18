@@ -2,7 +2,6 @@
 {py3:
 
 nsb_user = "{user}"
-nsb_mention = "{mention}"
 nsb_discrim = "{discrim}"
 nsb_id = "{id}"
 nsb_nick = "{nick}"
