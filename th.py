@@ -51,7 +51,7 @@ while base_date < rn:
 # 14:00:00 in seconds
 bst_1500 = 50400
 
-arg = nsb_args.split()[0]
+arg = nsb_args.split()[1]
 times = 1
 if arg.isnumeric():
     arg = int(arg)

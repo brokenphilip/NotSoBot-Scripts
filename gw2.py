@@ -9,7 +9,7 @@ rn = time.time()
 while base < rn:
     base += increment
 
-arg = nsb_args.split()[0]
+arg = nsb_args.split()[1]
 times = 1
 if arg.isnumeric():
     arg = int(arg)
