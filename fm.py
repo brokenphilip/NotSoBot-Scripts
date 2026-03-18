@@ -11,12 +11,18 @@ base += pm
 while base < rn:
     base += increment
 
+arg = nsb_args.split()[0]
 times = 1
 if arg.isnumeric():
     arg = int(arg)
     if arg > 0:
         times = arg
 
-for k in range(0, times):
-    print("{}. <t:{}> - <t:{}>".format(k, base - pm - pm, base))
-    base += increment
+if (times > 1):
+    print("## Next {} full moons:".format(times))
+    for k in range(0, times):
+        print("{}. <t:{}> - <t:{}>".format(k, base - pm - pm, base))
+        base += increment
+else:
+    print("## Next full moon:")
+    print("<t:{}> - <t:{}>".format(base - pm - pm, base))

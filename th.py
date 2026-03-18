@@ -51,18 +51,30 @@ while base_date < rn:
 # 14:00:00 in seconds
 bst_1500 = 50400
 
+arg = nsb_args.split()[0]
 times = 1
 if arg.isnumeric():
     arg = int(arg)
     if arg > 0:
         times = arg
 
-for k in range(0, times):
+if (times > 1):
+    print("## Next {} town hall events:".format(times))
+    for k in range(0, times):
+        dt_from = find_first_dow(base_year, base_month, 1) + datetime.timedelta(seconds=bst_1500)
+        dt_to = dt_from + datetime.timedelta(days=14)
+        print("{}. <t:{}> - <t:{}> ({})".format(k, int(dt_from.timestamp()), int(dt_to.timestamp()), event_name[event_count]))
+        if dt_from.day == 1:
+            dt_from += datetime.timedelta(days=7)
+            dt_to += datetime.timedelta(days=7)
+            print("  - or <t:{}> - <t:{}>".format(int(dt_from.timestamp()), int(dt_to.timestamp())))
+        increment_month()
+else:
+    print("## Next town hall event:")
     dt_from = find_first_dow(base_year, base_month, 1) + datetime.timedelta(seconds=bst_1500)
     dt_to = dt_from + datetime.timedelta(days=14)
-    print("{}. <t:{}> - <t:{}> ({})".format(k, int(dt_from.timestamp()), int(dt_to.timestamp()), event_name[event_count]))
+    print("<t:{}> - <t:{}> ({})".format(int(dt_from.timestamp()), int(dt_to.timestamp()), event_name[event_count]))
     if dt_from.day == 1:
         dt_from += datetime.timedelta(days=7)
         dt_to += datetime.timedelta(days=7)
         print("  - or <t:{}> - <t:{}>".format(int(dt_from.timestamp()), int(dt_to.timestamp())))
-    increment_month()
